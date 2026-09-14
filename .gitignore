@@ -1,0 +1,42 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Java
+*.class
+
+# Build
+bin/
+target/
+build/
+out/
+
+# JARs générés
+*.jar
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA (si tu changes d'IDE)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Minecraft server
+server/
+plugins/
+world/
+world_nether/
+world_the_end/
+
+# Runtime files
+logs/
+cache/
+crash-reports/
