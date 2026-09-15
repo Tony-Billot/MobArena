@@ -3,3 +3,8 @@ version: 1.0
 main: com.tonyb.mobarena.MobArena
 author: Tonyb
 description: A wave-based mob arena plugin
+
+commands:
+  spawnmob:
+    description: Spawns a custom mob
+    usage: /spawnmob
