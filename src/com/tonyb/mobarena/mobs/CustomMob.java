@@ -29,6 +29,7 @@ public abstract class CustomMob {
     }
 
     public void onSpawn(LivingEntity entity, JavaPlugin plugin) {
+    	entity.setFireTicks(0);
     }
 
 }

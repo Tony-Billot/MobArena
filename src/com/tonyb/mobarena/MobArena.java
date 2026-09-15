@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.tonyb.mobarena.commands.SpawnMobCommand;
 import com.tonyb.mobarena.events.JoinEvents;
+import com.tonyb.mobarena.events.MobEvents;
 public class MobArena extends JavaPlugin {
 	
 	@Override
@@ -11,6 +12,7 @@ public class MobArena extends JavaPlugin {
 		System.out.println("Started MobArena");
 		
 		getServer().getPluginManager().registerEvents(new JoinEvents(), this);
+		getServer().getPluginManager().registerEvents(new MobEvents(), this);
 		getCommand("spawnmob").setExecutor(new SpawnMobCommand(this));
 		
 		super.onEnable();
