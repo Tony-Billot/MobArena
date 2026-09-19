@@ -16,6 +16,10 @@ public class LightningZombie extends CustomMob {
     @Override
     public void onSpawn(LivingEntity entity, JavaPlugin plugin) {
         Zombie zombie = (Zombie) entity;
+        
+
+        zombie.setCustomName("§e⚡ Zombie Foudroyant");
+        zombie.setCustomNameVisible(true);
 
         new BukkitRunnable() {
             @Override

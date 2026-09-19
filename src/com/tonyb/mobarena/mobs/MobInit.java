@@ -2,7 +2,9 @@ package com.tonyb.mobarena.mobs;
 
 public enum MobInit {
 
-    LIGHTNING_ZOMBIE(new LightningZombie());
+    LIGHTNING_ZOMBIE(new LightningZombie()),
+    SPEED_SPIDER(new SpeedSpider());
+
 
     private final CustomMob mob;
 
