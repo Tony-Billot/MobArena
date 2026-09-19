@@ -1,5 +1,6 @@
 package com.tonyb.mobarena.mobs;
 
+import org.bukkit.Location;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -28,8 +29,17 @@ public abstract class CustomMob {
         return damage;
     }
 
-    public void onSpawn(LivingEntity entity, JavaPlugin plugin) {
-    	entity.setFireTicks(0);
+
+    public LivingEntity spawn(Location location, JavaPlugin plugin) {
+        LivingEntity entity = (LivingEntity) location.getWorld().spawnEntity(location, type);
+
+        entity.setMaxHealth(health);
+        entity.setHealth(health);
+        onSpawn(entity, plugin);
+        return entity;
     }
 
+    public void onSpawn(LivingEntity entity, JavaPlugin plugin) {
+        entity.setFireTicks(0);
+    }
 }

@@ -8,3 +8,5 @@ commands:
   spawnmob:
     description: Spawns a custom mob
     usage: /spawnmob
+  startarena:
+    description: Starts the arena fight
