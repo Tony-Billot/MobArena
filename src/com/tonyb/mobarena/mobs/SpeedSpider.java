@@ -10,9 +10,7 @@ import org.bukkit.potion.PotionEffectType;
 public class SpeedSpider extends CustomMob {
 
     public SpeedSpider() {
-
-        super(EntityType.SPIDER, 15, 1);
-
+        super(EntityType.SPIDER);
     }
 
     @Override

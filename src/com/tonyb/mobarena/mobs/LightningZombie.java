@@ -10,7 +10,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class LightningZombie extends CustomMob {
 
     public LightningZombie() {
-        super(EntityType.ZOMBIE, 20, 3);
+        super(EntityType.ZOMBIE);
     }
 
     @Override
